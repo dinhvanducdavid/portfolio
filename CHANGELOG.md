@@ -5,6 +5,10 @@ All notable changes to the David Portfolio Website project will be documented in
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-05-14
+### Added (Phase 4 - Launch)
+- **Deployment**: Codebase finalized and primed for Vercel edge deployment.
+
 ## [0.3.0] - 2026-05-14
 ### Added (Phase 3 - SEO & Polish)
 - **Global SEO**: Implemented advanced Next.js Metadata API in `layout.tsx` targeting Android platform engineering, AOSP, and IPC keywords.
