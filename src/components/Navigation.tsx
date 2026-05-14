@@ -53,23 +53,25 @@ export function Navigation() {
 
         {/* Desktop Socials */}
         <div className="hidden md:flex items-center gap-4 text-zinc-400">
-          <Link href="https://github.com" target="_blank" className="hover:text-[#ededed] transition-colors">
-            <Code2 className="w-5 h-5" />
+          <Link href="https://github.com" target="_blank" aria-label="GitHub Profile" className="hover:text-[#ededed] transition-colors">
+            <Code2 className="w-5 h-5" aria-hidden="true" />
           </Link>
-          <Link href="https://linkedin.com" target="_blank" className="hover:text-[#ededed] transition-colors">
-            <Globe className="w-5 h-5" />
+          <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile" className="hover:text-[#ededed] transition-colors">
+            <Globe className="w-5 h-5" aria-hidden="true" />
           </Link>
-          <Link href="mailto:david@example.com" className="hover:text-[#ededed] transition-colors">
-            <Mail className="w-5 h-5" />
+          <Link href="mailto:david@example.com" aria-label="Email David" className="hover:text-[#ededed] transition-colors">
+            <Mail className="w-5 h-5" aria-hidden="true" />
           </Link>
         </div>
 
         {/* Mobile Toggle */}
         <button
           className="md:hidden p-2 text-zinc-400 hover:text-[#ededed] transition-colors"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isOpen ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
         </button>
       </div>
 
@@ -93,14 +95,14 @@ export function Navigation() {
             </Link>
           ))}
           <div className="flex items-center gap-6 pt-4 border-t border-white/10 text-zinc-400">
-            <Link href="https://github.com" target="_blank">
-              <Code2 className="w-6 h-6" />
+            <Link href="https://github.com" target="_blank" aria-label="GitHub Profile">
+              <Code2 className="w-6 h-6" aria-hidden="true" />
             </Link>
-            <Link href="https://linkedin.com" target="_blank">
-              <Globe className="w-6 h-6" />
+            <Link href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+              <Globe className="w-6 h-6" aria-hidden="true" />
             </Link>
-            <Link href="mailto:david@example.com">
-              <Mail className="w-6 h-6" />
+            <Link href="mailto:david@example.com" aria-label="Email David">
+              <Mail className="w-6 h-6" aria-hidden="true" />
             </Link>
           </div>
         </motion.div>

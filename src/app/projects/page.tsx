@@ -1,5 +1,11 @@
 import { Smartphone, MonitorSmartphone, Code, ExternalLink, Code2 } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "A selection of Android open-source projects, AOSP modifications, and technical experiments by David.",
+};
 
 const categories = [
   {

@@ -1,4 +1,10 @@
 import { User, Cpu, Code2 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Learn more about David, an Android Platform Engineer specializing in AOSP customization and deep system-level architecture.",
+};
 
 export default function About() {
   return (

@@ -5,6 +5,34 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/atom-one-dark.css";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = getPostData(resolvedParams.slug);
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    keywords: post.tags,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      tags: post.tags,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();

@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { getSortedPostsData } from "@/lib/blog";
 import { Calendar, ChevronRight } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Deep technical dives into Android architecture, AOSP internals, and performance optimization.",
+};
 
 export default function Blog() {
   const posts = getSortedPostsData();

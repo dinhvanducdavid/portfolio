@@ -14,8 +14,37 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "David | Android Platform Engineer",
-  description: "Personal website of David, an Android Developer focused on AOSP customization, SystemUI, and Android architecture.",
+  title: {
+    template: "%s | David - Android Platform Engineer",
+    default: "David | Android Platform Engineer & AOSP Developer",
+  },
+  description: "Personal website and technical blog of David, an Android Developer focused on AOSP customization, SystemUI, Android architecture, and performance optimization.",
+  keywords: [
+    "Android development",
+    "AOSP",
+    "SystemUI",
+    "Android architecture",
+    "Android debugging",
+    "Binder IPC",
+    "Android performance optimization",
+    "Kotlin",
+    "Java"
+  ],
+  authors: [{ name: "David" }],
+  creator: "David",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://david-aosp.dev",
+    siteName: "David - Android Platform Engineer",
+    title: "David | Android Platform Engineer & AOSP Developer",
+    description: "Android Developer focused on AOSP customization, SystemUI, Android architecture, and performance optimization.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "David | Android Platform Engineer",
+    description: "Android Developer focused on AOSP customization, SystemUI, Android architecture, and performance optimization.",
+  },
 };
 
 export default function RootLayout({

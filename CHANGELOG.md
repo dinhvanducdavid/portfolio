@@ -5,6 +5,13 @@ All notable changes to the David Portfolio Website project will be documented in
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-05-14
+### Added (Phase 3 - SEO & Polish)
+- **Global SEO**: Implemented advanced Next.js Metadata API in `layout.tsx` targeting Android platform engineering, AOSP, and IPC keywords.
+- **Dynamic SEO**: Implemented `generateMetadata` in `[slug]/page.tsx` for optimal OpenGraph and Twitter cards per article.
+- **Search Engine Crawlability**: Auto-generated dynamic `sitemap.xml` and `robots.txt` endpoints in `src/app`.
+- **Accessibility**: Added `aria-label` and `aria-hidden` tags to interactive icons and responsive menu toggles in `Navigation.tsx`.
+
 ## [0.2.0] - 2026-05-14
 ### Added (Phase 2 - Blog System)
 - **Markdown Blog Engine**: Implemented `src/lib/blog.ts` using `gray-matter` to parse local `.md` files and frontmatter.
