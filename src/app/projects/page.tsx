@@ -1,6 +1,7 @@
 import { Smartphone, MonitorSmartphone, Code, ExternalLink, Code2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { GitHubActivity } from "@/components/GitHubActivity";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -137,6 +138,8 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        <GitHubActivity />
       </section>
     </div>
   );

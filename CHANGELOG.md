@@ -6,8 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.4.0] - 2026-05-14
-### Added (Phase 4 - Launch)
+### Added (Phase 4 - Launch & CMS)
 - **Deployment**: Codebase finalized and primed for Vercel edge deployment.
+- **Web Content Management System**: Integrated **Keystatic** (`@keystatic/core`, `@keystatic/next`) providing a fully functional admin panel at `/keystatic` to write and edit blog posts directly from the browser. Supports local filesystem editing and direct-to-GitHub commits in production.
 
 ## [0.3.0] - 2026-05-14
 ### Added (Phase 3 - SEO & Polish)
